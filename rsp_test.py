@@ -3,11 +3,13 @@
 import requests
 import csv
 import datetime
+import pymysql
 ###############################################################################
 
 def main():
+    today = datetime.date.today()
     with open('/root/ddos_detection/top-1m_{date}.csv'
-              .format(date=datetime.date.today()), 'r') as csvfile:
+              .format(today), 'r') as csvfile:
 
         alexa = csv.reader(csvfile)
         for rank, host in alexa:
