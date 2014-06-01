@@ -1,3 +1,4 @@
+*.swap
 *.pyc
 top-1m_*.csv
 ENV_ddos

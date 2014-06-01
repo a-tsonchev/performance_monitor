@@ -9,7 +9,7 @@ import pymysql
 
 def main():
     today = datetime.date.today()
-    with open('/root/ddos_detection/top-1m_{0}.csv'
+    with open('top-1m_{0}.csv'
          .format(today), 'r') as csvfile:
 	
         raw = csv.reader(csvfile)
@@ -26,11 +26,6 @@ def main():
 		    pass
 			
 	    print durations
-          
-            
-
-
-
 
 ###############################################################################
 
