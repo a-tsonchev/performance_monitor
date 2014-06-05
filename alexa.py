@@ -27,10 +27,10 @@ def update():
         with open(today_csv, 'w') as outfile:
             outfile.write(zip.read('top-1m.csv'))
 
-    # Remove any old files after the new one has been downloaded 
+    # Remove any old files after the new one has been downloaded
     for file in file_list:
         if file != today_csv:
             os.remove(file)
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     update()
